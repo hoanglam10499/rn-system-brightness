@@ -1,0 +1,25 @@
+{
+  "name": "rn-system-brightness",
+  "version": "0.0.1",
+  "description": "is a small and simple package that helps make your React Native app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoanglam10499/rn-system-brightness.git",
+    "baseUrl": "https://github.com/hoanglam10499/rn-system-brightness"
+  },
+  "homepage": "https://github.com/hoanglam10499/rn-system-brightness",
+  "bugs": {
+    "url": "https://github.com/hoanglam10499/rn-system-brightness/issues"
+  },
+  "keywords": [
+    "react-native",
+    "rn-system-brightness",
+    "react native brightness",
+    "brightness"
+  ],
+  "author": {
+    "name": "Hoang Lam",
+    "email": "hoanglam10499@email.com"
+  },
+  "license": "MIT"
+}
