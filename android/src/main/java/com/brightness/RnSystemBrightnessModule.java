@@ -18,7 +18,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 public class RnSystemBrightnessModule extends ReactContextBaseJavaModule {
 
     private static ReactApplicationContext reactContext;
-    private static final String PERMISSION_EVENT_NAME = "RNSystemBrightnessPermission";
+    private static final String PERMISSION_EVENT_NAME = "RnSystemBrightnessPermission";
     private static final int BRIGHTNESS_MIN = 0;
 
     public RnSystemBrightnessModule(ReactApplicationContext reactContext) {
@@ -28,7 +28,7 @@ public class RnSystemBrightnessModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNSystemBrightness";
+        return "RnSystemBrightness";
     }
 
     private int maxBrightness() {

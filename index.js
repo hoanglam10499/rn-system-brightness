@@ -1,5 +1,5 @@
 import { NativeModules, Platform } from "react-native";
-const RNSystemBrightness = NativeModules.RNSystemBrightness;
+const RNSystemBrightness = NativeModules.RnSystemBrightness;
 
 export default {
   getMaxBrightness: async () => {
