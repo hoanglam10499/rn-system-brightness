@@ -7,6 +7,6 @@
 #import "RCTBridgeModule.h"
 #endif
 
-@interface Brightness : NSObject<RCTBridgeModule>
+@interface RnSystemBrightness : NSObject<RCTBridgeModule>
 
 @end

@@ -1,6 +1,6 @@
-#import "Brightness.h"
+#import "RnSystemBrightness.h"
 
-@implementation Brightness
+@implementation RnSystemBrightness
 
 RCT_EXPORT_MODULE();
 

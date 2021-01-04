@@ -1,38 +1,38 @@
 import { NativeModules, Platform } from "react-native";
-const { Brightness } = NativeModules;
+const RNSystemBrightness = NativeModules.RNSystemBrightness;
 
 export default {
   getMaxBrightness: async () => {
     if (Platform.OS === "android") {
-      return await Brightness.getMaxBrightness();
+      return await RNSystemBrightness.getMaxBrightness();
     }
     return 1;
   },
   getBrightness: async () => {
-    const brightness = await Brightness.getBrightness();
+    const brightness = await RNSystemBrightness.getBrightness();
     if (Platform.OS === "android") {
-      const MAX = await Brightness.getMaxBrightness();
+      const MAX = await RNSystemBrightness.getMaxBrightness();
       return brightness / MAX;
     }
     return brightness;
   },
   setBrightness: async (value) => {
     if (Platform.OS === "android") {
-      const MAX = await Brightness.getMaxBrightness();
-      await Brightness.setBrightness(value * MAX);
+      const MAX = await RNSystemBrightness.getMaxBrightness();
+      await RNSystemBrightness.setBrightness(value * MAX);
     } else {
-      await Brightness.setBrightness(value);
+      await RNSystemBrightness.setBrightness(value);
     }
   },
   // Permission
   hasPermission: async () => {
     if (Platform.OS === "android") {
-      return await Brightness.hasPermission();
+      return await RNSystemBrightness.hasPermission();
     }
   },
   requestPermission: async () => {
     if (Platform.OS === "android") {
-      return await Brightness.requestPermission();
+      return await RNSystemBrightness.requestPermission();
     }
   },
 };

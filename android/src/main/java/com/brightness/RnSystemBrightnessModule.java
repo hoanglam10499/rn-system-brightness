@@ -1,35 +1,34 @@
-package com.reactlibrary;
+package com.brightness;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
-import android.view.WindowManager;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
+public class RnSystemBrightnessModule extends ReactContextBaseJavaModule {
 
-public class BrightnessModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
-    private static final String PERMISSION_EVENT_NAME = "screenBrightnessPermission";
+    private static final String PERMISSION_EVENT_NAME = "RNSystemBrightnessPermission";
     private static final int BRIGHTNESS_MIN = 0;
 
-    public BrightnessModule(ReactApplicationContext reactContext) {
+    public RnSystemBrightnessModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "Brightness";
+        return "RNSystemBrightness";
     }
 
     private int maxBrightness() {

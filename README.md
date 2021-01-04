@@ -1,6 +1,6 @@
-# rn-system-brightness
+# RN System Brightness
 
-Access and update the system brightness on a device.
+Access and update the system brightness on a device Android vs IOS
 
 ## Install
 
@@ -14,7 +14,7 @@ yarn add rn-system-brightness
 npm i --save rn-system-brightness
 ```
 
-## SETUP
+## Setup
 
 #### Android
 
@@ -33,6 +33,13 @@ Open the manifest file of your Android project and add
   android:name="android.permission.WRITE_SETTINGS"
   tools:ignore="ProtectedPermissions"
 />
+```
+
+#### IOS
+
+```js
+cd ios
+pod install
 ```
 
 #### API
