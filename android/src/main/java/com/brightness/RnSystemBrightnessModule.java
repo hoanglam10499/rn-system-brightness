@@ -97,8 +97,8 @@ public class RnSystemBrightnessModule extends ReactContextBaseJavaModule {
                     Settings.ACTION_MANAGE_WRITE_SETTINGS,
                     Uri.parse("package:" + application.getPackageName())
             );
-//            application.startActivityForResult(intent, 0, null);
-            application.startActivity(intent, null);
+            application.startActivityForResult(intent, 0, null);
+//            application.startActivity(intent, null);
         }
     }
 
